@@ -8,6 +8,13 @@ var App = () => {
   const [videoData, setVideoData] = React.useState([]);
   const [currentVideo, setCurrentVideo] = React.useState(exampleVideoData[0]);
 
+  React.useEffect(function() {
+    searchYouTube('', (data) => {
+      setVideoData(data);
+      setCurrentVideo(data[0]);
+    });
+  }, []);
+
   return (
     <div>
       <nav className="navbar">
