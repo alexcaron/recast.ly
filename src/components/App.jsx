@@ -7,13 +7,6 @@ import searchYouTube from '../lib/searchYouTube.js';
 var App = () => {
   const [videoData, setVideoData] = React.useState([]);
   const [currentVideo, setCurrentVideo] = React.useState(exampleVideoData[0]);
-  //const [currentSearch, setCurrentSearch] = React.useState('');
-  // React.useEffect(() => {
-  //   searchYouTube(currentSearch, function(data) {
-  //     setVideoData(data);
-  //   });
-  //   setCurrentVideo(videoData[0]);
-  // });
 
   return (
     <div>
